@@ -33,7 +33,7 @@ function make_buttons(seasonal_produce) {
   $('.produce').html("");
   for (var i = 0; i < seasonal_produce.length; i++) {
   prod_id = seasonal_produce[i].replace(/\s+/g, '');
-  $('.produce').append('<div class="display_produce" id="' + prod_id + '_pic"> <button id="' + prod_id + '">' + seasonal_produce[i] + '</button> </div>');
+  $('.produce').append('<div class="display_produce" id="' + prod_id + '_pic"> <button id="' + prod_id + '">' + '<span>' + seasonal_produce[i] + '</span>' + '</button> </div>');
   $('button').blur();
   }
 }

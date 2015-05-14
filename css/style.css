@@ -14,6 +14,10 @@ body {
   text-align: center;
 }
 
+/*.main h2 {
+  background-color: rgba(255, 255, 255, .8);
+}*/
+
 header {
   margin-top: 0;
   background: #E33D26;
@@ -48,6 +52,8 @@ form {
   display: inline-block;
   font-size: 1.5em;
   margin-top: 20px; 
+  background-color: rgba(255, 255, 255, .8);
+  padding: 5px 10px 0 10px;
 }
 
 
@@ -58,22 +64,35 @@ form {
 }
 
 .produce button {
-  margin-top: 260px;
+  margin-top: 0;
   font-size: 2em;
-  padding: 10px;
+  padding-top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, .8);
+  background-color: rgba(255, 255, 255, 0);
   border: none;
-  
+  height: 183px;
+}
+
+button span {
+  margin-top: 140px;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-top: 5px;
+  width: 100%;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, .8);
+  line-height: 1em; 
 }
 
 .display_produce {
-  width: 45%;
+  width: 25%;
   border: solid black 1px;
   display: inline-block;
-  height: 330px;
+  height: 183px;
   background-size: 100%;
-  margin: 5px;
+  margin: 15px;
+  padding: 0;
 }
 
 #asparagus_pic {
@@ -96,7 +115,65 @@ form {
   background-image: url("../images/spinach.jpg");
 }
 
+#tomatoes_pic {
+  background-image: url("../images/tomatoes.jpg");
+}
 
+#sweetcorn_pic {
+  background-image: url("../images/corn.jpg");
+}
+
+#carrots_pic {
+  background-image: url("../images/carrots.jpg");
+}
+
+#cucumbers_pic {
+  background-image: url("../images/cucumbers.jpg");
+}
+
+#greenbeans_pic {
+  background-image: url("../images/greenbeans.jpg");
+}
+
+#daikon_pic {
+  background-image: url("../images/daikon.jpg");
+}
+ 
+#sweetpotatoes_pic {
+  background-image: url("../images/sweetpotatoes.jpg");
+}
+
+#apples_pic {
+  background-image: url("../images/apples.jpg");
+}
+
+#Brusselssprouts_pic {
+  background-image: url("../images/brusselssprouts.jpg");
+}
+
+#fennel_pic {
+  background-image: url("../images/fennel.jpg");
+}
+
+#cabbage_pic {
+  background-image: url("../images/cabbage.jpg");
+}
+
+#kale_pic {
+  background-image: url("../images/kale.jpg");
+}
+
+#leeks_pic {
+  background-image: url("../images/leeks.jpg");
+}
+
+#parsnips_pic {
+  background-image: url("../images/parsnips.jpg");
+}
+
+#wintersquash_pic {
+  background-image: url("../images/wintersquash.jpg");
+}
 
 .recipe {
   max-width: 80%;
@@ -110,30 +187,49 @@ form {
   text-align: center;
   font-family: 'Shadows Into Light', cursive;
   font-size: 3em;
+  margin-bottom: 0;
+}
+
+.recipe h3 {
+  font-family: 'Shadows Into Light', cursive;
+  margin-left: 20px;
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.3em;
 }
 
 .ingredients {
   width: 40%;
   float: left;
   margin-left: 20px;
+  margin-top: 0;
+}
+
+.ingredients h2, .preparation h2 {
+  margin-top: 5px;
 }
 
 .preparation {
   width: 55%;
   float: left;
+  margin-top: 0;
 }
 
 .recipe p {
   clear: both;
   margin-left: 20px;
+  margin-bottom: 0;
 } 
-
-.recipe h3 {
-  margin-left: 20px;
-}
 
 div#broccoli, div#asparagus, div#beets, div#rhubarb, div#spinach, div#carrots, div#cucumbers, div#tomatoes, div#greenbeans, div#sweetcorn, div#daikon, div#sweetpotatoes, div#apples, div#Brusselssprouts, div#fennel, div#cabbage, div#kale, div#leeks, div#parsnips, div#wintersquash {
   display: none;
+}
+
+footer {
+  background: #E33D26;
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+  margin-top: 30px;
 }
 
 
