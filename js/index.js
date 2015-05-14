@@ -33,7 +33,7 @@ function make_buttons(seasonal_produce) {
   $('.produce').html("");
   for (var i = 0; i < seasonal_produce.length; i++) {
   prod_id = seasonal_produce[i].replace(/\s+/g, '');
-  $('.produce').append('<button id="' + prod_id + '">' + seasonal_produce[i] + '</button>');
+  $('.produce').append('<div class="display_produce" id="' + prod_id + '_pic"> <button id="' + prod_id + '">' + seasonal_produce[i] + '</button> </div>');
   $('button').blur();
   }
 }
@@ -42,22 +42,18 @@ function populate_produce() {
   switch(season) {
     case "Spring":
       make_buttons(spring_produce);
-      $('.produce>button').attr('class', 'spring');
       $('#season').html("Spring");
       break;
     case "Summer":
       make_buttons(summer_produce);
-      $('.produce>button').attr('class', 'summer');
       $('#season').html("Summer");
       break;
     case "Fall":
       make_buttons(fall_produce);
-      $('.produce>button').attr('class', 'fall');
       $('#season').html("Fall");
       break;
     case "Winter":
       make_buttons(winter_produce);
-      $('.produce>button').attr('class', 'winter');
       $('#season').html("Winter");
       break;
   }  

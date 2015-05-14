@@ -1,11 +1,16 @@
 body {
   background: white;
   font-family: 'Tenali Ramakrishna', sans-serif;
+  background-image: url("../images/kale_bgrd.jpg");
 }
 
 .wrapper {
+  margin-top: 0;
   margin: 0 auto;
   width: 100%;
+}
+
+.main {
   text-align: center;
 }
 
@@ -46,46 +51,59 @@ form {
 }
 
 
+.produce {
+  max-width: 1100px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .produce button {
-  margin: 10px;
+  margin-top: 260px;
   font-size: 2em;
-  padding: 20px;
-  border-radius: 7px;
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .8);
+  border: none;
   
 }
 
-.spring {
-  background: #A0CE53;
-  border: none;
-  border-bottom: 3px solid #C6E298;
-  width: 15%;
+.display_produce {
+  width: 45%;
+  border: solid black 1px;
+  display: inline-block;
+  height: 330px;
+  background-size: 100%;
+  margin: 5px;
 }
 
-.summer {
-  background: #EE0000;
-  border: none;
-  border-bottom: 3px solid #F68080;
-  width: 15%;
+#asparagus_pic {
+  background-image: url("../images/asparagus.jpg");
 }
 
-.fall {
-  background: orange;
-  border: none;
-  border-bottom: 3px solid #FFC966;
-  width: 20%;
+#beets_pic {
+  background-image: url("../images/beets.jpg");
 }
 
-.winter {
-  background: #D6FFAC;
-  border: none;
-  border-bottom: 3px solid #E8FFD1;
-  width: 20%;
+#broccoli_pic {
+  background-image: url("../images/broccoli.jpg");
 }
+
+#rhubarb_pic {
+  background-image: url("../images/rhubarb.jpg");
+}
+
+#spinach_pic {
+  background-image: url("../images/spinach.jpg");
+}
+
+
 
 .recipe {
   max-width: 80%;
   margin: 0 auto;
   font-size: 1.6em;
+  clear: both;
+  background-color: rgba(255, 255, 255, .6); 
 }
 
 .recipe h1 {
@@ -97,6 +115,7 @@ form {
 .ingredients {
   width: 40%;
   float: left;
+  margin-left: 20px;
 }
 
 .preparation {
@@ -106,6 +125,11 @@ form {
 
 .recipe p {
   clear: both;
+  margin-left: 20px;
+} 
+
+.recipe h3 {
+  margin-left: 20px;
 }
 
 div#broccoli, div#asparagus, div#beets, div#rhubarb, div#spinach, div#carrots, div#cucumbers, div#tomatoes, div#greenbeans, div#sweetcorn, div#daikon, div#sweetpotatoes, div#apples, div#Brusselssprouts, div#fennel, div#cabbage, div#kale, div#leeks, div#parsnips, div#wintersquash {
