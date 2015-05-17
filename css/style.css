@@ -40,6 +40,7 @@ header h1 {
 
 header h2 {
   margin-top: 0;
+  margin-bottom: 7px;
   font-size: 2em;
   letter-spacing: 3px;
 }
@@ -90,7 +91,8 @@ button span {
   border: solid black 1px;
   display: inline-block;
   height: 183px;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   margin: 15px;
   padding: 0;
 }
@@ -231,6 +233,90 @@ footer {
   font-family: 'Shadows Into Light', cursive;
   margin-top: 30px;
 }
+
+/* For mobile devices */
+
+@media screen and (max-width: 1096px) {
+  .display_produce, .produce button {
+    height: 170px;
+  } 
+
+  button span {
+    margin-top: 127px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .display_produce, .produce button {
+    height: 150px;
+  } 
+
+  button span {
+    margin-top: 107px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .display_produce, .produce button {
+    height: 150px;
+  } 
+
+  .display_produce {
+    width: 35%;
+  }
+
+  button span {
+    margin-top: 107px;
+  } 
+}
+
+@media screen and (max-width: 630px) {
+  .display_produce, .produce button {
+    height: 160px;
+  } 
+
+  .display_produce {
+    width: 85%;
+  }
+
+  button span {
+    margin-top: 107px;
+  } 
+
+header h1 {
+  font-size: 3.5em;
+}
+
+header h2 {
+  font-size: 1.5em;
+}
+
+.recipe {
+  width: 95%;
+  font-size: 1em;
+}
+
+.recipe h1 {
+  font-size: 2.5em;
+}
+
+.ingredients {
+  width: 100%;
+  margin-top: 0;
+}
+
+.ingredients h2, .preparation h2 {
+  margin-top: 5px;
+}
+
+.preparation {
+  width: 90%;
+  margin-left: 20px;
+  margin-right: 100px;
+}
+
+}
+
 
 
 
