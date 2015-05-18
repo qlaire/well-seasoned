@@ -314,13 +314,18 @@ footer a {
    font-size:  1.5em;
   }
 
-  .recipe {
+  .recipe, .attribution {
     width: 95%;
   }
 
   .ingredients ul {
     padding-right: 15px;
     padding-left: 15px;
+  }
+
+  .attribution p {
+    font-size: 1em;
+    line-height: 1em;
   }
 
   .recipe h3 {
