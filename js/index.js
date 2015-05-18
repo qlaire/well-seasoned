@@ -93,7 +93,11 @@ $('#select_season').on('input', function() {
     $('.main>h2').html('It\'s <span id="season">' + season + '</span>! Here\'s what\'s in season:');  
   } else {
       $('.main>h2').html('It\'s not <span id="season">' + season + '</span>, but if it were, here\'s what would be in season:');
-    }  
+    } 
+  $('.recipe>div').css('display', 'none');
+  $('html, body').animate({
+        scrollTop: $("header").offset().top
+    }, 800); 
 });
 
 
