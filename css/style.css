@@ -257,9 +257,11 @@ div#broccoli, div#asparagus, div#beets, div#rhubarb, div#spinach, div#carrots, d
   margin: 0 15px 0 15px;
 }
 
-.attribution a:visited, .attribution ul a {
+.attribution a:visited, .attribution a {
   color: black;
 }
+
+/* Footer */
 
 footer {
   background: #E33D26;
