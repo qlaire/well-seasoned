@@ -30,14 +30,6 @@ header h1 {
   font-size: 5em;
 }
 
-header h1 a {
-  text-decoration: none;
-}
-
-header h1 a:visited {
-  color: white;
-}
-
 .subtitle {
   background: #FF8A7B;
 }
@@ -259,6 +251,11 @@ div#broccoli, div#asparagus, div#beets, div#rhubarb, div#spinach, div#carrots, d
 
 .attribution a:visited, .attribution a {
   color: black;
+}
+
+header h1 a, header h1 a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 /* Footer */
