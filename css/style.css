@@ -52,9 +52,10 @@ header h2 {
 form {
   display: inline-block;
   font-size: 1.5em;
-  margin-top: 20px; 
+  margin: 20px 10px 0 10px; 
   background-color: rgba(255, 255, 255, .8);
   padding: 5px 10px 0 10px;
+  line-height: .9em;
 }
 
 
@@ -65,29 +66,22 @@ form {
 }
 
 .produce button {
-  margin-top: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   font-size: 2em;
-  padding-top: 0;
+  padding-top: 10px;
+  padding-bottom: 5px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
-  height: 183px;
-}
-
-button span {
-  margin-top: 140px;
-  margin-right: 0;
-  margin-left: 0;
-  margin-bottom: 0;
-  padding-top: 5px;
-  width: 100%;
-  display: inline-block;
   background-color: rgba(255, 255, 255, .8);
-  line-height: 1em; 
+  border: none;
+  line-height: .8em;
+
 }
 
 .display_produce {
   width: 25%;
+  position: relative;
   border: solid black 1px;
   display: inline-block;
   height: 183px;
@@ -95,6 +89,7 @@ button span {
   background-position: center;
   margin: 15px;
   padding: 0;
+  cursor: pointer;
 }
 
 #asparagus_pic {
@@ -178,7 +173,7 @@ button span {
 }
 
 .recipe {
-  max-width: 80%;
+  width: 80%;
   margin: 0 auto;
   font-size: 1.6em;
   clear: both;
@@ -189,7 +184,9 @@ button span {
   text-align: center;
   font-family: 'Shadows Into Light', cursive;
   font-size: 3em;
+  line-height: 1em;
   margin-bottom: 0;
+  padding-top: 20px;
 }
 
 .recipe h3 {
@@ -236,85 +233,74 @@ footer {
 
 /* For mobile devices */
 
-@media screen and (max-width: 1096px) {
-  .display_produce, .produce button {
-    height: 170px;
+@media screen and (max-width:1080px) {
+  .recipe h1 {
+    font-size: 2em;
   } 
 
-  button span {
-    margin-top: 127px;
+  .recipe h3 {
+    font-size: 1em;
   }
 }
 
-@media screen and (max-width: 1020px) {
-  .display_produce, .produce button {
-    height: 150px;
-  } 
-
-  button span {
-    margin-top: 107px;
-  }
+@media screen and (max-width:980px) {
+ 
 }
 
-@media screen and (max-width: 900px) {
-  .display_produce, .produce button {
-    height: 150px;
-  } 
+@media screen and (max-width: 768px) {
+  .produce button {
+    font-size: 1.5em;
+  }
 
   .display_produce {
-    width: 35%;
+    width: 40%;
+    margin: 5px;
+    height: 140px;
+  } 
+
+  header h1 {
+    font-size: 3.5em;
   }
 
-  button span {
-    margin-top: 107px;
-  } 
-}
-
-@media screen and (max-width: 630px) {
-  .display_produce, .produce button {
-    height: 160px;
-  } 
-
-  .display_produce {
-    width: 85%;
+  header h2 {
+    font-size: 1.5em;
   }
 
-  button span {
-    margin-top: 107px;
-  } 
+  .main h2 {
+   font-size:  1.5em;
+  }
 
-header h1 {
-  font-size: 3.5em;
-}
+  .recipe {
+    width: 95%;
+  }
 
-header h2 {
-  font-size: 1.5em;
-}
+  .recipe h1 {
+    
+  }
 
-.recipe {
-  width: 95%;
-  font-size: 1em;
-}
+  .ingredients ul {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 
-.recipe h1 {
-  font-size: 2.5em;
-}
+  .recipe h3 {
+    font-size: 1em;
+  }
 
-.ingredients {
-  width: 100%;
-  margin-top: 0;
-}
+  .ingredients {
+    width: 100%;
+    margin-top: 0;
+  }
 
-.ingredients h2, .preparation h2 {
-  margin-top: 5px;
-}
+  .ingredients h2, .preparation h2 {
+    margin-top: 5px;
+  }
 
-.preparation {
-  width: 90%;
-  margin-left: 20px;
-  margin-right: 100px;
-}
-
+  .preparation {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 100px;
+  }
 }
 
 

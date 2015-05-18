@@ -33,8 +33,7 @@ function make_buttons(seasonal_produce) {
   $('.produce').html("");
   for (var i = 0; i < seasonal_produce.length; i++) {
   prod_id = seasonal_produce[i].replace(/\s+/g, '');
-  $('.produce').append('<div class="display_produce" id="' + prod_id + '_pic"> <button id="' + prod_id + '">' + '<span>' + seasonal_produce[i] + '</span>' + '</button> </div>');
-  $('button').blur();
+  $('.produce').append('<div class="display_produce" id="' + prod_id + '_pic"> <button id="' + prod_id + '">' + seasonal_produce[i] + '</button> </div>');
   }
 }
 
@@ -67,18 +66,19 @@ populate_produce();
 
 
 function show_recipe() {
-  var ingredient = $(this).attr('id');
+
+  var ingredient = $(this).find('button').attr('id');
   
   $('.recipe>div').css('display', 'none');
 
   $('div#' + ingredient).css('display', 'block');
 }
 
-$('.produce').on("click", "button", show_recipe);
+$('.produce').on("click", "div", show_recipe);
 
 // scroll down to recipe
 
-$('.produce').on("click", "button", function() {
+$('.produce').on("click", "div", function() {
     $('html, body').animate({
         scrollTop: $(".recipe").offset().top
     }, 800);
