@@ -14,7 +14,7 @@ function what_season() {
   var season = null;
   if (month < 3 || month == 12) {
     season = "Winter";
-  } else if (month < 7) {
+  } else if (month < 6) {
     season = "Spring";
   } else if (month < 10) {
     season = "Summer";
